@@ -1,14 +1,18 @@
-# 🚀 Space Lasers
+# Lil' Robis
 
-**Building optical communication and precision tracking systems from scratch.**
+**Building cute little Swiss Army-style space robots.**
 
-I'm starting with the fundamentals — microcontrollers, light sensors, lasers, and photodetectors — and building step by step toward high-speed optical communication, automatic acquisition and tracking, and eventually space-capable laser communication systems.
+The goal is to build tiny, self-sufficient spacecraft that can see, communicate, sense, think, and move.
+
+I'm starting from the absolute basics — microcontrollers, sensors, cameras, lasers, power systems, and motors — and building one capability at a time.
+
+Eventually, I want these little robots to live in space: powered by the sun, communicating with each other and Earth, observing the world around them, and maneuvering autonomously.
 
 I'm documenting the entire process here.
 
 ---
 
-## 🔴 Latest
+## Latest
 
 ### Experiment 002 — Light Detection
 
@@ -18,7 +22,7 @@ Built an optical receiver using a light sensor and Arduino, turning changes in l
 
 ---
 
-## 🧪 Lab Notebook
+## Lab Notebook
 
 ### [002 — Light Detection](2026-09-19-experiment-002.md)
 Detecting light and converting it into digital information.
@@ -28,16 +32,20 @@ The starting point: building a system that allows two computers to communicate u
 
 ---
 
-## 🎯 Where This Is Going
+## Where This Is Going
 
-Transmit data with light.
+Give it eyes.
 
-Then make it faster.
+Give it a voice.
 
-Then acquire the target.
+Give it senses.
 
-Then track the target.
+Give it a brain.
 
-Then move the target.
+Give it power.
 
-**Then point it at space.**
+Teach it to move.
+
+Teach it to take care of itself.
+
+**Then send the little guy to space.**
