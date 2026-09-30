@@ -47,7 +47,7 @@ Replacing the LED/LDR link with a directional laser and photodiode receiver.
 Transmitting encoded digital information between two independent
 microcontrollers using light.
 
-### [001 — Optical Communication](YOUR-001-FILENAME.md)
+### [001 — Optical Communication](2026-08-20-experiment-001.md)
 
 The starting point: building a system that allows two computers to
 communicate using light.
