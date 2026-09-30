@@ -22,8 +22,6 @@ software, on Earth and in orbit.
 The ambition is not to find a comfortable niche alongside the largest space
 companies. It's to build something capable of competing with them.
 
-Nothing is off the table.
-
 This repository documents the process from the beginning.
 
 ---
