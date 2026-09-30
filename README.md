@@ -36,6 +36,7 @@ photodiode receiver, producing a strong detectable optical signal.
 → [Read Experiment 003](2026-09-29-experiment-003.md)
 
 ---
+## Build Journal
 
 ### [003 — Laser + Photodiode Link](2026-09-29-experiment-003.md)
 
