@@ -28,15 +28,26 @@ This repository documents the process from the beginning.
 
 ## Latest
 
-### Experiment 003 — Laser + Photodiode Link
+### Experiment 004 — Laser Digital Communication + Speed Testing
 
-Upgraded the optical link from an LED and LDR to a laser transmitter and
-photodiode receiver, producing a strong detectable optical signal.
+Transmitted digital information through the laser link, built an automated
+error-testing benchmark, and increased the raw data rate until the current
+receiver reached its reliability limit.
 
-→ [Read Experiment 003](2026-09-29-experiment-003.md)
+Fastest error-free result:
+
+**200 bit/s — 100/100 characters correct — 0 errors**
+
+→ [Read Experiment 004](2026-10-03-experiment-004.md)
 
 ---
+
 ## Build Journal
+
+### [004 — Laser Digital Communication + Speed Testing](2026-10-03-experiment-004.md)
+
+Transmitting digital data through the laser, measuring errors, and experimentally
+finding the speed limit of the current optical link.
 
 ### [003 — Laser + Photodiode Link](2026-09-29-experiment-003.md)
 
