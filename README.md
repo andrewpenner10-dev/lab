@@ -24,21 +24,6 @@ companies. It's to build something capable of competing with them.
 
 This repository documents the process from the beginning.
 
----
-
-## Latest
-
-### Experiment 004 — Laser Digital Communication + Speed Testing
-
-Transmitted digital information through the laser link, built an automated
-error-testing benchmark, and increased the raw data rate until the current
-receiver reached its reliability limit.
-
-Fastest error-free result:
-
-**200 bit/s — 100/100 characters correct — 0 errors**
-
-→ [Read Experiment 004](2026-10-03-experiment-004.md)
 
 ---
 
