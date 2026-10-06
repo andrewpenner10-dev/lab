@@ -1,6 +1,6 @@
 # Lab
 
-**Building a space company.**
+**Building fast and efficient communications technology in space.**
 
 I'm starting with laser optical communications.
 
@@ -11,16 +11,13 @@ flight-ready optical terminals.
 
 But optical communications is the starting point.
 
-The larger goal is to build a space technology company that keeps adding
+The larger goal is to build space technology that keeps adding
 capabilities: communications, sensing, computing, power, navigation,
 spacecraft, infrastructure, and whatever else becomes useful as we push
 farther into space.
 
 I want to understand and eventually control the full stack — hardware and
 software, on Earth and in orbit.
-
-The ambition is not to find a comfortable niche alongside the largest space
-companies. It's to build something capable of competing with them.
 
 This repository documents the process from the beginning.
 
