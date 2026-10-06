@@ -26,7 +26,7 @@ This repository documents the process from the beginning.
 
 ## Build Journal
 
-### [005 — Pushing the Optical Link to 2,000 bps](2026-10-04-experiment-005.md)
+### [005 — Pushing the Optical Link to 2,000 bps](2026-10-4-experiment-005.md)
 
 Increasing the laser communication speed from ~200 bps toward 2,000 bps by
 testing faster signaling, receiver performance, timing, and error rates.
