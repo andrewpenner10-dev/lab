@@ -26,6 +26,10 @@ This repository documents the process from the beginning.
 
 ## Build Journal
 
+### [006 — From Laser Communication to Optical Computing](2026-10-14-experiment-006.md)
+
+Increased optical signalling speed to 20,000 bit/s, verified 348,160 payload bits with zero detected errors, and successfully transmitted the first real computing request through a laser. The receiving service executed the calculation and displayed the result on a self-hosted web dashboard.
+
 ### [005 — Pushing the Optical Link to 2,000 bps](2026-10-4-experiment-005.md)
 
 Increasing the laser communication speed from ~200 bps toward 10,000 bps by
