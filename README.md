@@ -1,25 +1,10 @@
 # Lab
 
-**Building fast and efficient communications technology in space.**
+Building optical communications, networking, and computing infrastructure from the ground up, with the long-term goal of operating these systems in space.
 
-I'm starting with laser optical communications.
+Starting with laser-based data transmission, I’m developing the hardware and software needed to connect devices, route information, and perform distributed computing. Over time, the goal is to integrate these capabilities into increasingly advanced systems, eventually extending into spacecraft and orbital infrastructure.
 
-The immediate goal is to learn how to build the hardware and software required
-to transmit information through space with light — lasers, photodetectors,
-pointing and tracking systems, electronics, control software, and eventually
-flight-ready optical terminals.
-
-But optical communications is the starting point.
-
-The larger goal is to build space technology that keeps adding
-capabilities: communications, sensing, computing, power, navigation,
-spacecraft, infrastructure, and whatever else becomes useful as we push
-farther into space.
-
-I want to understand and eventually control the full stack — hardware and
-software, on Earth and in orbit.
-
-This repository documents the process from the beginning.
+This repository documents the experiments, prototypes, and progress along the way.
 
 
 ---
