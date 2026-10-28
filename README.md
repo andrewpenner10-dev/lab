@@ -11,6 +11,10 @@ This repository documents the experiments, prototypes, and progress along the wa
 
 ## Build Journal
 
+### [007 — Bidirectional Lasers, Hardware UART, and 200,000 bit/s](2026-10-28-experiment-007.md)
+
+Established bidirectional optical communication between Appa and Momo, introduced hardware UART reception, and increased the verified signalling rate tenfold to 200,000 bit/s. Successfully transmitted 128/128 packets across two tests with zero detected errors. A subsequent attempt at 250,000 bit/s revealed the software transmitter's timing limit, identifying the next challenge in developing a faster optical network.
+
 ### [006 — From Laser Communication to Optical Computing](2026-10-14-experiment-006.md)
 
 Increased optical signalling speed to 20,000 bit/s, verified 348,160 payload bits with zero detected errors, and successfully transmitted the first real computing request through a laser. The receiving service executed the calculation and displayed the result on a self-hosted web dashboard.
