@@ -1,6 +1,6 @@
 # Lab
 
-Building optical communications, networking, and computing infrastructure from the ground up, with the long-term goal of operating these systems in space.
+Building optical communications, networking, and computing infrastructure, with the long-term goal of operating these systems in space.
 
 Starting with laser-based data transmission, I’m developing the hardware and software needed to connect devices, route information, and perform distributed computing. Over time, the goal is to integrate these capabilities into increasingly advanced systems, eventually extending into spacecraft and orbital infrastructure.
 
