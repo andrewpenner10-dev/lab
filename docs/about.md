@@ -3,13 +3,11 @@ layout: default
 title: About
 permalink: /about/
 ---
-<section class="article-hero"><div class="shell narrow"><div class="eyebrow">ABOUT THIS PROJECT</div><h1>Learning by building.</h1><p class="lead">This is a personal lab journal—not a finished product or a polished research program.</p></div></section>
+<section class="article-hero"><div class="shell narrow"><div class="eyebrow">LAB JOURNAL</div><h1>About</h1><p class="lead">Notes from my optical communication experiments.</p></div></section>
 <article class="shell narrow article-body prose" markdown="1">
-I started by trying to send digital information from one Arduino to another using light. The experiments have gradually grown into laser-based data transmission, packet integrity checks, hardware UART reception, and small computing workloads.
+I use Arduino boards, lasers, and photodiodes to test data transmission through light. This journal records the hardware, code, measurements, and problems from those tests.
 
-My longer-term interests are **optical communications**, **networking infrastructure**, and **distributed computing**, including how systems like these might someday work in space.
+The experiments cover **optical communications**, packet integrity, hardware UART reception, and sending computing requests over a laser link.
 
-For now, I'm documenting the process as it happens: what I tried, what worked, what failed, and what I learned.
-
-[Read the experiment journal]({{ '/' | relative_url }}#experiments) · [See the GitHub repository](https://github.com/andrewpenner10-dev/lab)
+[View experiments]({{ '/' | relative_url }}#experiments) · [GitHub repository](https://github.com/andrewpenner10-dev/lab)
 </article>
