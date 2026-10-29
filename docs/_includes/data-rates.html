@@ -20,11 +20,13 @@
     <p class="rate-note">These are short physical tests, not sustained throughput guarantees. The October 4–5 result passed with 17-byte blocks; larger blocks had errors, and a later repeat failed after the setup appeared to change. <a href="{{ '/experiments/005/' | relative_url }}">Read the test conditions ↗</a></p>
   </div>
   <div class="rate-panel" id="history-rates" aria-labelledby="history-heading">
-    <div class="rate-intro"><div><h3 id="history-heading">From telephone lines to optical satellites</h3><p>Selected milestones in date order. Film references locate the era; they do not imply the technology was used in the film.</p></div></div>
-    <div class="rate-scale"><span>Logarithmic scale · each equal interval represents a ×10 increase</span><span>100 bit/s → 200 Gb/s</span></div>
+    <div class="rate-intro"><div><h3 id="history-heading">From telephone lines to optical satellites</h3><p>Selected milestones alongside the software and services people remember from the era. Home internet connections and local network speeds were often very different.</p></div></div>
+    <div class="history-zoom" hidden><label for="history-range">Compare rates up to</label><select id="history-range"><option value="200000000000">200 Gb/s · all rates</option><option value="1000000000">1 Gb/s</option><option value="100000000">100 Mb/s</option><option value="1000000">1 Mb/s · slower links</option></select></div>
+    <div class="rate-scale"><span>Linear scale · twice the length means twice the rate</span><span id="history-scale-end">0 → 200 Gb/s</span></div>
+    <p class="history-scale-note" id="history-scale-note" aria-live="polite">All rates shown. Slower links can be too small to see at this scale; their exact rates are labelled.</p>
     <ol class="rate-list history-list">
     {% for item in site.data.rate_history %}
-      <li class="rate-row{% if item.own %} rate-own{% endif %}">
+      <li class="rate-row{% if item.own %} rate-own{% endif %}" data-bps="{{ item.bps }}">
         <div class="history-row-top"><div><span class="rate-date">{{ item.year }}{% if item.own %} · THIS LAB{% endif %}</span><h4>{{ item.title }}</h4></div><strong class="rate-value">{{ item.label }}</strong></div>
         <div class="rate-track" aria-hidden="true"><span style="width:{{ item.width }}%"></span></div>
         <p class="history-note">{{ item.note }} {% if item.experiment %}<a href="{{ '/experiments/' | append: item.experiment | append: '/' | relative_url }}">Journal ↗</a>{% else %}<a href="{{ item.source }}">Source ↗</a>{% endif %}</p>
@@ -35,4 +37,4 @@
     <p class="rate-note">Rates describe different systems: modem downstream limits, nominal network link rates, advertised optical capacity, and measured lab signalling. They provide scale, not an equivalent comparison of payload speed, distance, or reliability. Decimal units: 1 kb/s = 1,000 bit/s.</p>
   </div>
 </section>
-<script src="{{ '/assets/data-rates.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/data-rates.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

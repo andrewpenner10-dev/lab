@@ -29,3 +29,27 @@
   select(tabs[0]);
   tablist.hidden = false;
 })();
+
+(() => {
+  const range = document.getElementById('history-range');
+  if (!range) return;
+  const rows = [...document.querySelectorAll('.history-list [data-bps]')];
+  function updateScale() {
+    const max = Number(range.value);
+    let excluded = 0;
+    rows.forEach(row => {
+      const rate = Number(row.dataset.bps);
+      row.hidden = rate > max;
+      if (row.hidden) excluded++;
+      row.querySelector('.rate-track > span').style.width = `${rate / max * 100}%`;
+    });
+    const label = range.selectedOptions[0].textContent.split(' · ')[0];
+    document.getElementById('history-scale-end').textContent = `0 → ${label}`;
+    document.getElementById('history-scale-note').textContent =
+      (excluded ? `${excluded} faster links are outside this range and hidden. ` : 'All rates shown. ') +
+      'Slower links can be too small to see at this scale; their exact rates are labelled.';
+  }
+  range.addEventListener('change', updateScale);
+  updateScale();
+  document.querySelector('.history-zoom').hidden = false;
+})();

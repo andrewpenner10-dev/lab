@@ -139,10 +139,10 @@ a:focus-visible { outline: 2px solid #93adff; outline-offset: 5px; }
 a.rate-value:hover { text-decoration: underline; text-underline-offset: 4px; }
 .rate-date { color: #a9aebb; font-size: 12px; }
 .rate-track { height: 12px; border-radius: 5px; background: #20222b; margin: 10px 0; overflow: hidden; }
-.rate-track>span { display: block; height: 100%; min-width: 1px; border-radius: inherit; background: linear-gradient(180deg, #8098f1 0%, #425ed2 25%, #243a9c 80%, #647fef 100%); box-shadow: inset 0 1px #c9d7ff66; }
+.rate-track>span { display: block; height: 100%; min-width: 1px; border-radius: inherit; background: #244bff; }
 .rate-row-bottom { font-size: 12px; color: #aeb3c1; }
 .rate-status { white-space: nowrap; color: #9cafdf; }
-.rate-record .rate-track>span { background: linear-gradient(180deg, #abc4ff, #5678f1 45%, #304bb8); }
+.rate-record .rate-track>span { background: #244bff; }
 .rate-attempt .rate-track>span { background: repeating-linear-gradient(135deg, #a17b3355 0px, #a17b3355 6px, #d7a64e88 6px, #d7a64e88 8px); box-shadow: none; border: 1px solid #b3975c; }
 .rate-attempt .rate-status { color: #d6b576; }
 .rate-results { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; border-top: 1px solid var(--line); margin-top: 24px; padding-top: 24px; }
@@ -154,12 +154,12 @@ a.rate-value:hover { text-decoration: underline; text-underline-offset: 4px; }
 .history-row-top h4 { font-size: 17px; font-weight: 550; margin: 3px 0 0; }
 .history-list .rate-row { border-bottom: 1px solid #20232d; padding: 22px 0; }
 .history-list .rate-row:last-child { border-bottom: 0; }
-.history-list .rate-track>span { background: linear-gradient(180deg, #727e9e, #424b64); }
+.history-list .rate-track>span { background: #244bff; min-width: 0; border-radius: 0; }
 .history-note, .culture-note { font-size: 12px; color: #a4aab8; margin: 7px 0 0; }
 .culture-note { color: #b8bdd0; }
 .culture-note>span { color: #8098e9; margin-right: 4px; }
 .rate-own h4, .rate-own .rate-value, .rate-own .rate-date { color: #b1c4ff; }
-.history-list .rate-own .rate-track>span { background: linear-gradient(180deg, #abc4ff, #5678f1 45%, #304bb8); }
+.history-list .rate-own .rate-track>span { background: #244bff; }
 @media(max-width:680px) {
   .hero { padding-bottom: 130px; }
   .rate-panel { padding: 20px 16px; }
@@ -174,3 +174,10 @@ a.rate-value:hover { text-decoration: underline; text-underline-offset: 4px; }
   .history-row-top h4 { font-size: 16px; }
   .rate-tabs button { padding: 12px; font-size: 13px; }
 }
+
+.history-zoom { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; font-size: 13px; color: #b9c0d0; }
+.history-zoom[hidden], .history-list .rate-row[hidden] { display: none; }
+.history-zoom select { max-width: 100%; font: inherit; color: #e0e6ff; background: #10131d; border: 1px solid #404b70; border-radius: 6px; padding: 9px; color-scheme: dark; }
+.history-zoom select:focus-visible { outline: 2px solid #7996ff; outline-offset: 3px; }
+.history-scale-note { font-size: 12px; color: #a4aab8; margin: 0 0 10px; }
+@media(max-width: 600px) { .history-zoom { align-items: flex-start; flex-direction: column; gap: 6px; } }
