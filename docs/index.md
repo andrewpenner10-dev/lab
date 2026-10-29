@@ -5,7 +5,7 @@ title: Home
 <section class="hero"><div class="shell">
   <div class="eyebrow">LAB JOURNAL</div>
   <h1>Building the Internet with Lasers</h1>
-  <p class="hero-copy">Documenting the development of free-space optical communications, networking protocols, internet infrastructure, and distributed computing—from Arduino prototypes toward orbital systems.</p>
+  <p class="hero-copy">Documenting the development of free-space optical communications, internet infrastructure, and distributed computing—from Arduino prototypes toward orbital systems.</p>
   <div class="actions"><a class="primary" href="#experiments">View experiments <span>↘</span></a><a class="secondary" href="{{ '/about/' | relative_url }}">About the project ↗</a></div>
   <div class="metrics">
     <div><strong>007</strong><span>Experiments recorded</span></div>
