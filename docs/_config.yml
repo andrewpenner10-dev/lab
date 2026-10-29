@@ -1,0 +1,8 @@
+title: Lab
+description: A build journal about optical communications, networking and computing.
+url: "https://andrewpenner10-dev.github.io"
+baseurl: "/lab"
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md

@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<section class="article-hero"><div class="shell narrow">
+  <a class="back" href="{{ '/' | relative_url }}#experiments">← All experiments</a>
+  <div class="eyebrow">EXPERIMENT {{ page.number }} <span class="divider-dot">•</span> {{ page.date_display }}</div>
+  <h1>{{ page.title }}</h1>
+  <p class="lead">{{ page.description }}</p>
+</div></section>
+<article class="shell narrow article-body prose">{{ content }}</article>
+<div class="shell narrow article-bottom"><a href="{{ '/' | relative_url }}#experiments">← Back to build journal</a></div>
