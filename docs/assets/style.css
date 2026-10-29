@@ -24,17 +24,14 @@ a:focus-visible { outline: 2px solid #93adff; outline-offset: 5px; }
 .nav nav a:hover, .back:hover { color: #c7d2ff; }
 .hero, .article-hero { position: relative; isolation: isolate; overflow: hidden; background: #050506; }
 .hero { padding: 80px 0 52px; }
-/* A dark cobalt rim: light catches the bevel while the center stays black. */
+/* Optical aperture and alignment beam, rendered as cobalt glass. */
 .hero::before, .article-hero::before {
   content: ""; position: absolute; z-index: -1; pointer-events: none;
-  width: 490px; height: 300px; right: -170px; top: 48px;
-  border: 22px solid transparent; border-radius: 68px;
-  background: linear-gradient(#050507, #060608) padding-box,
-    linear-gradient(138deg, #080917 3%, #10195c 22%, #243bf1 29%, #798cff 30%, #1427b2 32%, #070c34 44%, #060711 62%, #182aac 78%, #334df5 82%, #080b24 94%) border-box;
-  box-shadow: 0 0 0 1px #222b6670, inset 1px 2px 3px #8c9fff48, inset -4px -5px 12px #112bdb35, 0 10px 35px #000;
-  transform: rotate(-18deg);
+  width: 650px; height: 480px; right: -135px; top: 0;
+  background: url("optical-aperture.svg") center / contain no-repeat;
+  opacity: .8;
 }
-.article-hero::before { opacity: .55; right: -260px; }
+.article-hero::before { opacity: .42; right: -240px; top: -70px; }
 .eyebrow { font-size: 11px; font-weight: 650; letter-spacing: .14em; color: #a5a9b7; }
 .hero h1 { max-width: 700px; font-size: clamp(34px, 4.5vw, 56px); font-weight: 600; letter-spacing: -.035em; line-height: 1.15; margin: 20px 0 24px; text-wrap: balance; }
 .hero-copy { max-width: 570px; font-size: 17px; color: #b3b5bf; }
@@ -96,7 +93,7 @@ a:focus-visible { outline: 2px solid #93adff; outline-offset: 5px; }
   .nav nav { gap: 14px; }
   .nav nav a { font-size: 12px; }
   .hero { padding: 52px 0 32px; }
-  .hero::before { right: -400px; top: 35px; opacity: .6; }
+  .hero::before { right: -430px; top: 20px; opacity: .45; }
   .metrics { grid-template-columns: 1fr; gap: 18px; margin-top: 38px; }
   .section-heading { display: block; }
   .section-heading>p { margin-top: 12px; }
@@ -104,7 +101,7 @@ a:focus-visible { outline: 2px solid #93adff; outline-offset: 5px; }
   .entry-num { font-size: 15px; }
   .entry h3 { font-size: 17px; }
   .article-hero { padding: 40px 0 30px; }
-  .article-hero::before { right: -420px; }
+  .article-hero::before { right: -450px; }
   .foot-inner { flex-wrap: wrap; }
 }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } }

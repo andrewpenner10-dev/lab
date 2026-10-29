@@ -5,7 +5,7 @@ title: Home
 <section class="hero"><div class="shell">
   <div class="eyebrow">LAB JOURNAL</div>
   <h1>Optical communication experiments</h1>
-  <p class="hero-copy">Notes on Arduino boards, laser links, and data transmission. Hardware setups, measurements, and test results.</p>
+  <p class="hero-copy">I started by sending data between two Arduino boards using light. Now I’m testing faster laser links and using them to carry computing requests, with pointing and tracking as a next step toward links that can stay aligned as they move.</p>
   <div class="actions"><a class="primary" href="#experiments">View experiments <span>↘</span></a><a class="secondary" href="{{ '/about/' | relative_url }}">About the project ↗</a></div>
   <div class="metrics">
     <div><strong>007</strong><span>Experiments recorded</span></div>
