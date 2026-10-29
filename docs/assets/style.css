@@ -24,14 +24,20 @@ a:focus-visible { outline: 2px solid #93adff; outline-offset: 5px; }
 .nav nav a:hover, .back:hover { color: #c7d2ff; }
 .hero, .article-hero { position: relative; isolation: isolate; overflow: hidden; background: #050506; }
 .hero { padding: 80px 0 52px; }
-/* Optical aperture and alignment beam, rendered as cobalt glass. */
+/* Orbital horizon: black space, blue atmosphere, and sunlit clouds. */
 .hero::before, .article-hero::before {
-  content: ""; position: absolute; z-index: -1; pointer-events: none;
-  width: 650px; height: 480px; right: -135px; top: 0;
-  background: url("optical-aperture.svg") center / contain no-repeat;
-  opacity: .8;
+  content: ""; position: absolute; z-index: -2; pointer-events: none;
+  inset: 0; background: url("earth-horizon.webp") center 54% / cover no-repeat;
 }
-.article-hero::before { opacity: .42; right: -240px; top: -70px; }
+.hero::after, .article-hero::after {
+  content: ""; position: absolute; z-index: -1; pointer-events: none; inset: 0;
+  background: linear-gradient(90deg, #050506f5 0%, #050506db 30%, #05050675 58%, #05050605 90%),
+    linear-gradient(0deg, #050506 0%, #05050600 34%, #05050600 85%, #05050680 100%);
+}
+.hero .metrics { margin-top: 110px; background: linear-gradient(180deg, #05050680, #05050620); }
+.hero .metrics span, .hero .metrics-note { color: #bdc0cb; text-shadow: 0 1px 3px #000; }
+.article-hero::before { background-position: center 51%; }
+.article-hero::after { background: linear-gradient(90deg, #050506f5, #050506da 40%, #05050650), linear-gradient(0deg, #050506, transparent 65%); }
 .eyebrow { font-size: 11px; font-weight: 650; letter-spacing: .14em; color: #a5a9b7; }
 .hero h1 { max-width: 700px; font-size: clamp(34px, 4.5vw, 56px); font-weight: 600; letter-spacing: -.035em; line-height: 1.15; margin: 20px 0 24px; text-wrap: balance; }
 .hero-copy { max-width: 570px; font-size: 17px; color: #b3b5bf; }
@@ -93,7 +99,9 @@ a:focus-visible { outline: 2px solid #93adff; outline-offset: 5px; }
   .nav nav { gap: 14px; }
   .nav nav a { font-size: 12px; }
   .hero { padding: 52px 0 32px; }
-  .hero::before { right: -430px; top: 20px; opacity: .45; }
+  .hero::before { background-position: 65% center; }
+  .hero::after { background: linear-gradient(90deg, #050506eb, #05050666), linear-gradient(0deg, #050506, transparent 55%); }
+  .hero .metrics { margin-top: 70px; }
   .metrics { grid-template-columns: 1fr; gap: 18px; margin-top: 38px; }
   .section-heading { display: block; }
   .section-heading>p { margin-top: 12px; }
@@ -101,7 +109,7 @@ a:focus-visible { outline: 2px solid #93adff; outline-offset: 5px; }
   .entry-num { font-size: 15px; }
   .entry h3 { font-size: 17px; }
   .article-hero { padding: 40px 0 30px; }
-  .article-hero::before { right: -450px; }
+  .article-hero::before { background-position: 60% center; }
   .foot-inner { flex-wrap: wrap; }
 }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } }
