@@ -1,0 +1,90 @@
+[
+  {
+    "year": "1962",
+    "title": "Bell 103 modem",
+    "label": "300 bit/s",
+    "bps": 300,
+    "note": "Full-duplex data over telephone lines.",
+    "source": "https://www.computinghistory.org.uk/det/6986/The-first-commercial-modem-is-manufactured",
+    "width": 5.13
+  },
+  {
+    "year": "1983",
+    "title": "IEEE Ethernet",
+    "label": "10 Mb/s",
+    "bps": 10000000,
+    "note": "The original IEEE 802.3 standard for wired local networks.",
+    "source": "https://www.ieee802.org/3/ad_hoc/ngrates/public/15_11/dambrosia_nge_01_1115.pdf",
+    "culture": "Also in 1983: WarGames put dial-up hacking on screen. Its modem connection was a different technology from Ethernet.",
+    "culture_source": "https://catalog.afi.com/Film/67139-WARGAMES",
+    "width": 53.757
+  },
+  {
+    "year": "1995",
+    "title": "Fast Ethernet",
+    "label": "100 Mb/s",
+    "bps": 100000000,
+    "note": "A tenfold increase in Ethernet line rate.",
+    "source": "https://www.ieee802.org/3/ad_hoc/ngrates/public/15_11/dambrosia_nge_01_1115.pdf",
+    "culture": "The year Toy Story arrived in cinemas—the first feature-length computer-animated film.",
+    "culture_source": "https://www.pixar.com/our-story",
+    "width": 64.509
+  },
+  {
+    "year": "1998",
+    "title": "56k dial-up · V.90",
+    "label": "Up to 56 kb/s",
+    "bps": 56000,
+    "note": "Downstream maximum; upstream was up to 33.6 kb/s. Actual connections could be slower.",
+    "source": "https://www.itu.int/rec/T-REC-V.90-199809-I",
+    "culture": "The dial-up internet era of You’ve Got Mail, released in 1998.",
+    "culture_source": "https://www.afi.com/news/youve-got-mail-afi-movie-club/",
+    "width": 29.547
+  },
+  {
+    "year": "1998",
+    "title": "Gigabit Ethernet",
+    "label": "1 Gb/s",
+    "bps": 1000000000,
+    "note": "IEEE 802.3z brings gigabit rates to Ethernet.",
+    "source": "https://www.ieee802.org/3/ad_hoc/ngrates/public/15_11/dambrosia_nge_01_1115.pdf",
+    "width": 75.26
+  },
+  {
+    "year": "1999",
+    "title": "Wi-Fi · 802.11b",
+    "label": "11 Mb/s",
+    "bps": 11000000,
+    "note": "A nominal wireless link rate, shared over the radio channel—not application throughput.",
+    "source": "https://www.cisco.com/E-Learning/bulk/guest/celc/fwl/ch2/2_3_2/content.html",
+    "width": 54.203
+  },
+  {
+    "year": "2002",
+    "title": "10 Gigabit Ethernet",
+    "label": "10 Gb/s",
+    "bps": 10000000000,
+    "note": "IEEE 802.3ae extends Ethernet to 10 gigabits per second.",
+    "source": "https://www.ieee802.org/3/ad_hoc/ngrates/public/15_11/dambrosia_nge_01_1115.pdf",
+    "width": 86.012
+  },
+  {
+    "year": "2024 report",
+    "title": "Starlink optical intersatellite links",
+    "label": "Up to 200 Gb/s",
+    "bps": 200000000000,
+    "note": "Advertised rate per optical link in Starlink’s 2024 progress report; this is the report date, not the invention date.",
+    "source": "https://starlink.com/public-files/starlinkProgressReport_2024.pdf",
+    "width": 100.0
+  },
+  {
+    "year": "Oct 28, 2026",
+    "title": "Appa & Momo · this lab",
+    "label": "200 kb/s",
+    "bps": 200000,
+    "note": "Short optical tests: 128 / 128 packets across two runs. Useful payload rate ≈18.7 kb/s.",
+    "experiment": "007",
+    "own": true,
+    "width": 35.491
+  }
+]

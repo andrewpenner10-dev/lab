@@ -1,0 +1,74 @@
+[
+  {
+    "label": "200 bit/s",
+    "bps": 200,
+    "date": "Oct 3, 2026",
+    "experiment": "004",
+    "note": "100 / 100 characters correct",
+    "status": "pass",
+    "width": 0.08
+  },
+  {
+    "label": "10.53 kb/s",
+    "bps": 10526.32,
+    "date": "Oct 4\u20135, 2026",
+    "experiment": "005",
+    "note": "45,424 bits \u00b7 0 errors in the 17-byte block test",
+    "status": "pass",
+    "width": 4.210528
+  },
+  {
+    "label": "20 kb/s",
+    "bps": 20000,
+    "date": "Oct 14, 2026",
+    "experiment": "006",
+    "note": "2,560 / 2,560 packets in the benchmark",
+    "status": "pass",
+    "width": 8.0
+  },
+  {
+    "label": "31.25 kb/s",
+    "bps": 31250,
+    "date": "Oct 28, 2026",
+    "experiment": "007",
+    "note": "128 / 128 packets verified",
+    "status": "pass",
+    "width": 12.5
+  },
+  {
+    "label": "57.14 kb/s",
+    "bps": 57143,
+    "date": "Oct 28, 2026",
+    "experiment": "007",
+    "note": "128 / 128 packets verified",
+    "status": "pass",
+    "width": 22.8572
+  },
+  {
+    "label": "100 kb/s",
+    "bps": 100000,
+    "date": "Oct 28, 2026",
+    "experiment": "007",
+    "note": "Two runs \u00b7 128 / 128 packets verified",
+    "status": "pass",
+    "width": 40.0
+  },
+  {
+    "label": "200 kb/s",
+    "bps": 200000,
+    "date": "Oct 28, 2026",
+    "experiment": "007",
+    "note": "Two runs \u00b7 128 / 128 packets verified",
+    "status": "record",
+    "width": 80.0
+  },
+  {
+    "label": "250 kb/s",
+    "bps": 250000,
+    "date": "Oct 28, 2026",
+    "experiment": "007",
+    "note": "Attempt aborted \u00b7 transmitter timing fault",
+    "status": "attempt",
+    "width": 100.0
+  }
+]

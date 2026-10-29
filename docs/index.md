@@ -7,13 +7,8 @@ title: Home
   <h1>Building the Internet with Lasers</h1>
   <p class="hero-copy">Documenting the development of free-space optical communications, internet infrastructure, and distributed computing—from Arduino prototypes toward orbital systems.</p>
   <div class="actions"><a class="primary" href="#experiments">View experiments <span>↘</span></a><a class="secondary" href="{{ '/about/' | relative_url }}">About the project ↗</a></div>
-  <div class="metrics">
-    <div><strong>007</strong><span>Experiments recorded</span></div>
-    <div><strong>200 kb/s</strong><span>Highest repeated optical signalling test</span></div>
-    <div><strong>128 / 128</strong><span>Packets verified at 200 kb/s</span></div>
-  </div>
-  <p class="metrics-note">Results from short physical tests—not a sustained throughput or reliability claim.</p>
 </div></section>
+{% include data-rates.html %}
 <section id="experiments" class="journal"><div class="shell"><div class="section-heading"><div><div class="eyebrow">JOURNAL</div><h2>Experiments</h2></div><p>Most recent first.</p></div>
 <div class="entries">
 {% assign sorted = site.pages | where: 'is_experiment', true | sort: 'number' | reverse %}

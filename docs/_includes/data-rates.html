@@ -1,0 +1,38 @@
+<section class="rate-section shell" aria-labelledby="rates-title">
+  <div class="section-heading"><div><div class="eyebrow">LINK DEVELOPMENT</div><h2 id="rates-title">Data rates</h2></div><p>Lab measurements and real-world reference points.</p></div>
+  <div class="rate-tabs" role="tablist" aria-label="Data rate views" hidden>
+    <button id="lab-tab" type="button" role="tab" aria-selected="true" aria-controls="lab-rates">My milestones</button>
+    <button id="history-tab" type="button" role="tab" aria-selected="false" aria-controls="history-rates" tabindex="-1">Technology history</button>
+  </div>
+  <div class="rate-panel" id="lab-rates" aria-labelledby="lab-heading">
+    <div class="rate-intro"><div><h3 id="lab-heading">Optical link milestones</h3><p>Dates from the experiment journals.</p></div><div class="rate-summary"><span>Highest demonstrated signalling rate</span><strong>200 kb/s</strong><a href="{{ '/experiments/007/' | relative_url }}">October 28, 2026 · Experiment 007 ↗</a></div></div>
+    <div class="rate-scale"><span>Linear scale · nominal signalling rate</span><span>0 → 250 kb/s</span></div>
+    <ol class="rate-list">
+    {% for item in site.data.link_progress %}
+      <li class="rate-row rate-{{ item.status }}">
+        <div class="rate-row-top"><a class="rate-value" href="{{ '/experiments/' | append: item.experiment | append: '/' | relative_url }}">{{ item.label }}</a><span class="rate-date">{{ item.date }}</span></div>
+        <div class="rate-track" aria-hidden="true"><span style="width:{{ item.width }}%"></span></div>
+        <div class="rate-row-bottom"><span>{{ item.note }}</span><span class="rate-status">{% if item.status == 'attempt' %}Not achieved{% elsif item.status == 'record' %}Current best{% else %}Passed{% endif %}</span></div>
+      </li>
+    {% endfor %}
+    </ol>
+    <div class="rate-results" aria-label="200 kilobit per second test results"><div><strong>128 / 128</strong><span>Packets across two runs</span></div><div><strong>0</strong><span>Detected CRC / framing errors or overruns</span></div><div><strong>≈18.7 kb/s</strong><span>Useful payload rate, including gaps</span></div></div>
+    <p class="rate-note">These are short physical tests, not sustained throughput guarantees. The October 4–5 result passed with 17-byte blocks; larger blocks had errors, and a later repeat failed after the setup appeared to change. <a href="{{ '/experiments/005/' | relative_url }}">Read the test conditions ↗</a></p>
+  </div>
+  <div class="rate-panel" id="history-rates" aria-labelledby="history-heading">
+    <div class="rate-intro"><div><h3 id="history-heading">From telephone lines to optical satellites</h3><p>Selected milestones in date order. Film references locate the era; they do not imply the technology was used in the film.</p></div></div>
+    <div class="rate-scale"><span>Logarithmic scale · each equal interval represents a ×10 increase</span><span>100 bit/s → 200 Gb/s</span></div>
+    <ol class="rate-list history-list">
+    {% for item in site.data.rate_history %}
+      <li class="rate-row{% if item.own %} rate-own{% endif %}">
+        <div class="history-row-top"><div><span class="rate-date">{{ item.year }}{% if item.own %} · THIS LAB{% endif %}</span><h4>{{ item.title }}</h4></div><strong class="rate-value">{{ item.label }}</strong></div>
+        <div class="rate-track" aria-hidden="true"><span style="width:{{ item.width }}%"></span></div>
+        <p class="history-note">{{ item.note }} {% if item.experiment %}<a href="{{ '/experiments/' | append: item.experiment | append: '/' | relative_url }}">Journal ↗</a>{% else %}<a href="{{ item.source }}">Source ↗</a>{% endif %}</p>
+        {% if item.culture %}<p class="culture-note"><span aria-hidden="true">↳</span> {{ item.culture }} <a href="{{ item.culture_source }}" aria-label="Source for the pop culture reference for {{ item.year }}">Reference ↗</a></p>{% endif %}
+      </li>
+    {% endfor %}
+    </ol>
+    <p class="rate-note">Rates describe different systems: modem downstream limits, nominal network link rates, advertised optical capacity, and measured lab signalling. They provide scale, not an equivalent comparison of payload speed, distance, or reliability. Decimal units: 1 kb/s = 1,000 bit/s.</p>
+  </div>
+</section>
+<script src="{{ '/assets/data-rates.js' | relative_url }}" defer></script>
