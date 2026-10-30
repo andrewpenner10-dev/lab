@@ -258,3 +258,9 @@ a.rate-value:hover { text-decoration: underline; text-underline-offset: 4px; }
 .spatial-math dd { color: #c4e4fb; text-align: right; margin: 0; }
 .timing-rate { margin: 12px 0 24px; }
 @media(max-width:680px) { .spatial-detail { grid-template-columns: 1fr; gap: 20px; } .pulse-lens { max-width: 270px; margin: auto; } .spatial-math>div { flex-direction: column; gap: 4px; } .spatial-math dd { text-align: left; } }
+
+.pulse-strip { text-align: center; font-size: 12px; color: #89badb; }
+.pulse-strip svg { display: block; width: 100%; margin: auto; }
+.optical-scene .laser-emitter, .optical-scene .receiver-sensor { stroke: #249aff; stroke-width: 5; }
+.beam-view>span { display: block; overflow-wrap: anywhere; }
+.link-section { padding-top: 32px; }
