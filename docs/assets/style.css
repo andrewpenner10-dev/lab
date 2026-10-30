@@ -241,3 +241,20 @@ a.rate-value:hover { text-decoration: underline; text-underline-offset: 4px; }
  .packet-strip { grid-template-columns: 1fr 1fr; }
  .packet-strip .packet-payload { grid-column: 1 / -1; }
 }
+
+.spatial-assumptions { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 13px; color: #a8c7df; }
+.frozen-beam { stroke: #249aff; stroke-width: 4; filter: drop-shadow(0 0 5px #188cff); }
+.distance-guide { stroke: #52758e; fill: none; stroke-width: 1; }
+.spatial-answer { border-left: 3px solid #244bff; padding: 4px 0 4px 20px; margin: 24px 0; }
+.spatial-answer>strong { font-size: 21px; font-weight: 550; color: #d9edff; }
+.spatial-answer p { margin-bottom: 0; }
+.spatial-answer b { color: #c7e6ff; font-weight: 550; }
+.spatial-detail { display: grid; grid-template-columns: 280px 1fr; align-items: center; gap: 30px; margin: 25px 0; }
+.pulse-lens { text-align: center; font-size: 12px; color: #89badb; }
+.pulse-lens svg { display: block; width: 100%; max-width: 300px; margin: auto; }
+.spatial-math { margin: 20px 0 0; font-size: 13px; }
+.spatial-math>div { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid #25333f; padding: 10px 0; }
+.spatial-math dt { color: #93a8b8; }
+.spatial-math dd { color: #c4e4fb; text-align: right; margin: 0; }
+.timing-rate { margin: 12px 0 24px; }
+@media(max-width:680px) { .spatial-detail { grid-template-columns: 1fr; gap: 20px; } .pulse-lens { max-width: 270px; margin: auto; } .spatial-math>div { flex-direction: column; gap: 4px; } .spatial-math dd { text-align: left; } }
