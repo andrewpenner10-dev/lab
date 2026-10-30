@@ -25,7 +25,7 @@
     "note": "A tenfold increase in Ethernet line rate.",
     "source": "https://www.ieee802.org/3/ad_hoc/ngrates/public/15_11/dambrosia_nge_01_1115.pdf",
     "width": 0.05,
-    "culture": "Windows 95 arrives: the Start menu, desktop PCs, and the sound of a modem connecting to the internet.",
+    "culture": "Windows 95",
     "culture_source": "https://blogs.windows.com/windows-insider/2020/08/24/looking-back-the-25th-anniversary-of-windows-95/"
   },
   {
@@ -36,7 +36,7 @@
     "note": "Downstream maximum; upstream was up to 33.6 kb/s. Actual connections could be slower.",
     "source": "https://www.itu.int/rec/T-REC-V.90-199809-I",
     "width": 2.8000000000000003e-05,
-    "culture": "The early Google era: Google incorporated in 1998, when a home web connection often meant dial-up.",
+    "culture": "Early Google",
     "culture_source": "https://blog.google/company-news/inside-google/company-announcements/marking-20ish-years-google/"
   },
   {
@@ -56,7 +56,7 @@
     "note": "A nominal wireless link rate, shared over the radio channel—not application throughput.",
     "source": "https://www.cisco.com/E-Learning/bulk/guest/celc/fwl/ch2/2_3_2/content.html",
     "width": 0.0055000000000000005,
-    "culture": "MSN Messenger launches in 1999: buddy lists, instant messages, and seeing who was online after school.",
+    "culture": "MSN Messenger",
     "culture_source": "https://news.microsoft.com/source/1999/07/21/microsoft-launches-msn-messenger-service/"
   },
   {
@@ -67,7 +67,7 @@
     "note": "IEEE 802.3ae extends Ethernet to 10 gigabits per second.",
     "source": "https://www.ieee802.org/3/ad_hoc/ngrates/public/15_11/dambrosia_nge_01_1115.pdf",
     "width": 5.0,
-    "culture": "The Napster era: its 1999 launch brought peer-to-peer music sharing to home computers. By 2002, networks were advancing far beyond dial-up download speeds.",
+    "culture": "Napster era",
     "culture_source": "https://www.pbs.org/wgbh/pages/frontline/shows/music/inside/cron.html"
   },
   {
