@@ -1,9 +1,5 @@
 <section class="rate-section shell" aria-labelledby="rates-title">
-  <div class="section-heading"><div><div class="eyebrow">LINK DEVELOPMENT</div><h2 id="rates-title">Data rates</h2></div><p>Lab measurements and real-world reference points.</p></div>
-  <div class="rate-tabs" role="tablist" aria-label="Data rate views" hidden>
-    <button id="lab-tab" type="button" role="tab" aria-selected="true" aria-controls="lab-rates">My milestones</button>
-    <button id="history-tab" type="button" role="tab" aria-selected="false" aria-controls="history-rates" tabindex="-1">Technology history</button>
-  </div>
+  <div class="section-heading"><div><div class="eyebrow">LINK DEVELOPMENT</div><h2 id="rates-title">Data rates</h2></div><p>Dates and measurements from the lab.</p></div>
   <div class="rate-panel" id="lab-rates" aria-labelledby="lab-heading">
     <div class="rate-intro"><div><h3 id="lab-heading">Optical link milestones</h3><p>Dates from the experiment journals.</p></div><div class="rate-summary"><span>Highest demonstrated signalling rate</span><strong>200 kb/s</strong><a href="{{ '/experiments/007/' | relative_url }}">October 28, 2026 · Experiment 007 ↗</a></div></div>
     <div class="rate-scale"><span>Linear scale · nominal signalling rate</span><span>0 → 250 kb/s</span></div>
@@ -19,21 +15,4 @@
     <div class="rate-results" aria-label="200 kilobit per second test results"><div><strong>128 / 128</strong><span>Packets across two runs</span></div><div><strong>0</strong><span>Detected CRC / framing errors or overruns</span></div><div><strong>≈18.7 kb/s</strong><span>Useful payload rate, including gaps</span></div></div>
     <p class="rate-note">These are short physical tests, not sustained throughput guarantees. The October 4–5 result passed with 17-byte blocks; larger blocks had errors, and a later repeat failed after the setup appeared to change. <a href="{{ '/experiments/005/' | relative_url }}">Read the test conditions ↗</a></p>
   </div>
-  <div class="rate-panel" id="history-rates" aria-labelledby="history-heading">
-    <div class="rate-intro"><div><h3 id="history-heading">From telephone lines to optical satellites</h3><p>Selected milestones alongside the software and services people remember from the era. Home internet connections and local network speeds were often very different.</p></div></div>
-    <div class="history-zoom" hidden><label for="history-range">Compare rates up to</label><select id="history-range"><option value="200000000000">200 Gb/s · all rates</option><option value="1000000000">1 Gb/s</option><option value="100000000">100 Mb/s</option><option value="1000000">1 Mb/s · slower links</option></select></div>
-    <div class="rate-scale"><span>Linear scale · twice the length means twice the rate</span><span id="history-scale-end">0 → 200 Gb/s</span></div>
-    <p class="history-scale-note" id="history-scale-note" aria-live="polite">All rates shown. Slower links can be too small to see at this scale; their exact rates are labelled.</p>
-    <ol class="rate-list history-list">
-    {% for item in site.data.rate_history %}
-      <li class="rate-row{% if item.own %} rate-own{% endif %}" data-bps="{{ item.bps }}">
-        <div class="history-row-top"><div><span class="rate-date">{{ item.year }}{% if item.own %} · THIS LAB{% endif %}</span><h4>{{ item.title }}{% if item.culture %}<span class="culture-label"> — <a href="{{ item.culture_source }}">{{ item.culture }}</a></span>{% endif %}</h4></div><strong class="rate-value">{{ item.label }}</strong></div>
-        <div class="rate-track" aria-hidden="true"><span style="width:{{ item.width }}%"></span></div>
-        <p class="history-note">{{ item.note }} {% if item.experiment %}<a href="{{ '/experiments/' | append: item.experiment | append: '/' | relative_url }}">Journal ↗</a>{% else %}<a href="{{ item.source }}">Source ↗</a>{% endif %}</p>
-      </li>
-    {% endfor %}
-    </ol>
-    <p class="rate-note">Rates describe different systems: modem downstream limits, nominal network link rates, advertised optical capacity, and measured lab signalling. They provide scale, not an equivalent comparison of payload speed, distance, or reliability. Decimal units: 1 kb/s = 1,000 bit/s.</p>
-  </div>
 </section>
-<script src="{{ '/assets/data-rates.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

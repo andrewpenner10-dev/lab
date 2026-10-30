@@ -8,6 +8,7 @@ title: Home
   <p class="hero-copy">Documenting the development of free-space optical communications, internet infrastructure, and distributed computing—from Arduino prototypes toward orbital systems.</p>
   <div class="actions"><a class="primary" href="#experiments">View experiments <span>↘</span></a><a class="secondary" href="{{ '/about/' | relative_url }}">About the project ↗</a></div>
 </div></section>
+{% include optical-link.html %}
 {% include data-rates.html %}
 <section id="experiments" class="journal"><div class="shell"><div class="section-heading"><div><div class="eyebrow">JOURNAL</div><h2>Experiments</h2></div><p>Most recent first.</p></div>
 <div class="entries">
